@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simulador de Orcamento - Rover Dev</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Simulador de Orcamento</h1>
+  <p class="subtitulo">Selecione os servicos desejados e veja o valor total na hora.</p>
+
+  <div class="servico">
+    <label>
+      <input type="checkbox" value="1800" onchange="calcularTotal()">
+      Landing Page
+    </label>
+    <span class="preco">R$ 1.800</span>
+  </div>
+
+  <div class="servico">
+    <label>
+      <input type="checkbox" value="4500" onchange="calcularTotal()">
+      Site Institucional
+    </label>
+    <span class="preco">R$ 4.500</span>
+  </div>
+
+  <div class="servico">
+    <label>
+      <input type="checkbox" value="9800" onchange="calcularTotal()">
+      E-commerce
+    </label>
+    <span class="preco">R$ 9.800</span>
+  </div>
+
+  <div class="servico">
+    <label>
+      <input type="checkbox" value="5500" onchange="calcularTotal()">
+      API REST
+    </label>
+    <span class="preco">R$ 5.500</span>
+  </div>
+
+  <div class="servico">
+    <label>
+      <input type="checkbox" value="2200" onchange="calcularTotal()">
+      Integracao de API
+    </label>
+    <span class="preco">R$ 2.200</span>
+  </div>
+
+  <div class="servico">
+    <label>
+      <input type="checkbox" value="350" onchange="calcularTotal()">
+      Hospedagem Mensal
+    </label>
+    <span class="preco">R$ 350/mes</span>
+  </div>
+
+  <div class="servico">
+    <label>
+      <input type="checkbox" value="900" onchange="calcularTotal()">
+      Manutencao Mensal
+    </label>
+    <span class="preco">R$ 900/mes</span>
+  </div>
+
+  <div class="servico">
+    <label>
+      <input type="checkbox" value="2400" onchange="calcularTotal()">
+      Banco de Dados
+    </label>
+    <span class="preco">R$ 2.400</span>
+  </div>
+
+  <div class="total-box">
+    <h2>Total estimado:</h2>
+    <div class="total-valor" id="total">R$ 0,00</div>
+  </div>
+
+  <button onclick="solicitarOrcamento()">Solicitar Orcamento</button>
+
+  <div class="aviso" id="aviso">Seu orcamento foi solicitado! Entraremos em contato em breve.</div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
